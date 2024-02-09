@@ -1,10 +1,6 @@
 FROM rocker/shiny:latest
 
-RUN apt-get update && apt-get install -y \
-    git \
-    libxml2-dev \
-    libssl-dev \
-    libcurl4-openssl-dev \
+RUN apt-get update && apt-get install -y git
 
 # Clone
 RUN git clone https://github.com/jamiekim1/SP400-Shiny-App-on-Docker.git /srv/shiny-server/sp400app
