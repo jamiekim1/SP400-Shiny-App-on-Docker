@@ -8,5 +8,9 @@ if (length(new.packages)) {
   install.packages(new.packages, dependencies = TRUE)
 }
 
+if (!requireNamespace("devtools", quietly = TRUE)) {
+  install.packages("devtools")
+}
+
 devtools::install_github("risktoollib/RTL")
 devtools::install_github("risktoollib/RTLedu")
