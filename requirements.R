@@ -1,5 +1,7 @@
 p <- c("tidyquant", "plotly", "devtools", "tidyverse", "shiny", "ggplot2",
-       "learnr", "magrittr", "rlang", "lifecycle", "glue")
+  "learnr", "magrittr", "rlang", "lifecycle", "glue", "dplyr", "httr",
+  "jsonlite", "lubridate", "purrr", "readr", "stringr", "tibble", "tidyr",
+  "timetk", "tsibble", "xts", "zoo", "Rcpp", "TTR", "tidyselect", "PerformanceAnalytics")
 
 new.packages <- p[!(p %in% installed.packages()[, "Package"])]
 if (length(new.packages)) {
